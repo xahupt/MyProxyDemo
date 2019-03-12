@@ -41,5 +41,12 @@ public class TestDemo {
         }
 //        proxy.Method2();
 //        proxy1.SubjectMethod();
+        /**
+         * 静态代理实现
+         */
+        System.out.println("Static Proxy---------------");
+        StaticProxy staticProxy = new StaticProxy(subjectInterface);
+        staticProxy.SubjectMethod();
+        staticProxy.Method2();
     }
 }
